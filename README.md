@@ -27,13 +27,13 @@
 macOS, Linux, Git Bash, or WSL:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/donovanai-org/donovan-agent/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/tudor-22/donovan-agent/main/install.sh | bash
 ```
 
 Windows PowerShell:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/donovanai-org/donovan-agent/main/install.ps1 | iex"
+powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/tudor-22/donovan-agent/main/install.ps1 | iex"
 ```
 
 The scripts check Python, clone the repo if needed, create a virtual environment, install Donovan, optionally install browser support, and run first-time setup.
