@@ -48,10 +48,10 @@ log "Detected platform: $PLATFORM"
 PYTHON=""
 for candidate in python3.12 python3.11 python3; do
   if command -v "$candidate" &>/dev/null; then
-    PYVER="$($candidate --version 2>&1 | grep -oP '\d+\.\d+')"
+    PYVER="$($candidate -c 'import sys; print(f"{sys.version_info.major}.{sys.version_info.minor}")')"
     MAJOR="${PYVER%%.*}"
     MINOR="${PYVER#*.}"
-    # Add check for minimum version using Python's own comparison
+    # Check for minimum version: Python 3.11+
     if [ "$MAJOR" -ge 3 ] && [ "$MINOR" -ge 11 ]; then
       PYTHON="$candidate"
       break
