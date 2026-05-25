@@ -36,7 +36,7 @@ Windows PowerShell:
 powershell -ExecutionPolicy Bypass -c "irm https://raw.githubusercontent.com/tudor-22/donovan-agent/main/install.ps1 | iex"
 ```
 
-The scripts check Python, clone the repo if needed, create a virtual environment, install Donovan, optionally install browser support, and run first-time setup.
+The scripts check Python, clone the repo if needed, create a virtual environment, install Donovan, add `donovan` to your user `PATH`, optionally install browser support, and run first-time setup.
 
 ## Quick Start
 
