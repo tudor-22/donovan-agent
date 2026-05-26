@@ -29,7 +29,7 @@ CHROMIUM_MANIFEST = {
     "manifest_version": 3,
     "name": "Donovan Browser Companion",
     "version": COMPANION_VERSION,
-    "description": "Lets Donovan CLI read and interact with the active browser tab with user permission.",
+    "description": "Lets Donovan Agent read and interact with the active browser tab with user permission.",
     "permissions": ["activeTab", "scripting", "tabs"],
     "host_permissions": ["<all_urls>", "http://127.0.0.1:8765/*", "http://localhost:8765/*"],
     "background": {"service_worker": "background.js"},
@@ -47,7 +47,7 @@ FIREFOX_MANIFEST = {
     "manifest_version": 2,
     "name": "Donovan Browser Companion",
     "version": COMPANION_VERSION,
-    "description": "Lets Donovan CLI read and interact with the active browser tab with user permission.",
+    "description": "Lets Donovan Agent read and interact with the active browser tab with user permission.",
     "permissions": [
         "activeTab",
         "tabs",

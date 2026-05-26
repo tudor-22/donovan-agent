@@ -100,7 +100,7 @@ BROWSER_PLAYWRIGHT_WORK_TOOLS = {
 }
 
 
-def set_terminal_title(title: str = "Donovan CLI") -> None:
+def set_terminal_title(title: str = "Donovan Agent") -> None:
     """Set terminal tab title across all supported platforms."""
     import platform
     try:
@@ -374,7 +374,7 @@ class DonovanAgentApp:
             pass
 
     def run_interactive(self) -> None:
-        set_terminal_title("Donovan CLI")
+        set_terminal_title("Donovan Agent")
         if not self.config.app.first_run_complete:
             run_setup_wizard(self.manager, self.console, launch_note=True)
             self.refresh()
@@ -455,7 +455,7 @@ class DonovanAgentApp:
                 self.console.print(error_panel(str(exc)))
 
     def one_shot(self, prompt: str) -> str:
-        set_terminal_title("Donovan CLI")
+        set_terminal_title("Donovan Agent")
         if not self.config.app.first_run_complete:
             raise ProviderError("DonovanAgent is not configured yet. Run `DonovanAgent setup` first.")
         session_id = self.start_session()

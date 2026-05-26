@@ -1,6 +1,6 @@
 # MCP (Model Context Protocol) Integration
 
-Donovan CLI v0.1.12 supports the [Model Context Protocol](https://modelcontextprotocol.io) — an open standard for connecting AI agents with external tools, data sources, and prompts. This lets you extend Donovan with capabilities from any MCP-compatible server.
+Donovan Agent v0.1.12 supports the [Model Context Protocol](https://modelcontextprotocol.io) — an open standard for connecting AI agents with external tools, data sources, and prompts. This lets you extend Donovan with capabilities from any MCP-compatible server.
 
 ## Overview
 

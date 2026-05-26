@@ -1,4 +1,4 @@
-# Donovan CLI v0.1.15
+# Donovan Agent v0.1.15
 
 This patch fixes Browser Companion setup on Windows.
 

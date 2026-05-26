@@ -1,4 +1,4 @@
-"""MCP (Model Context Protocol) integration for Donovan CLI.
+"""MCP (Model Context Protocol) integration for Donovan Agent.
 
 This subsystem provides full Model Context Protocol support:
 - Multi-scope MCP server configuration (user/project/local)
